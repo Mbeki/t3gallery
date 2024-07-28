@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { db } from "~/server/db";
 
+export const dynamic = "force-dynamic"
+
 const mockUrls = [
   "https://res.cloudinary.com/dja66bd2c/image/upload/v1720116861/samples/woman-on-a-football-field.jpg",
   "https://res.cloudinary.com/dja66bd2c/image/upload/v1720116860/samples/cup-on-a-table.jpg",
