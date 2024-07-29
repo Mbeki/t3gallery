@@ -89,6 +89,12 @@ export function SimpleUploadButton() {
         ),
       });
     },
+    onUploadError() {
+      posthog.capture("upload_error", { error });
+      toast({
+        description: "Upload failed",
+      });
+    },
     onClientUploadComplete() {
       router.refresh();
     },
